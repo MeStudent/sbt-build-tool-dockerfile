@@ -34,7 +34,10 @@ RUN \
   cd /tmp/ && \
   wget "https://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb" && \
   dpkg -i sbt-$SBT_VERSION.deb && \
-  rm sbt-$SBT_VERSION.deb && \
-  sbt sbtVersion
+  rm sbt-$SBT_VERSION.deb
 
-USER jenkins
+#==========
+# Install dependences
+#==========
+USER jenkins   
+RUN sbt sbtVersion
