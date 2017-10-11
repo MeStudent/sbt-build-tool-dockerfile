@@ -34,10 +34,18 @@ RUN \
   cd /tmp/ && \
   wget "https://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb" && \
   dpkg -i sbt-$SBT_VERSION.deb && \
-  rm sbt-$SBT_VERSION.deb
+  rm sbt-$SBT_VERSION.deb && \
+  apt-get update && \
+  apt-get install sbt 
+
+COPY Meminfo.class /tmp/
 
 #==========
 # Install dependences
 #==========
-USER jenkins   
-RUN sbt sbtVersion
+USER jenkins
+RUN \
+    cd ~/ && \
+    mkdir project && \
+    echo "sbt.version=$SBT_VERSION" > project/build.properties && \
+    sbt -mem 1024 sbtVersion
