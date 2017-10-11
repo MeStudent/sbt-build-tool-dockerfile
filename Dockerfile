@@ -38,8 +38,6 @@ RUN \
   apt-get update && \
   apt-get install sbt 
 
-COPY Meminfo.class /tmp/
-
 #==========
 # Install dependences
 #==========
