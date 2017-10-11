@@ -20,7 +20,6 @@ This Docker image is intended to be used with the [Jenkins Docker Pipeline Plugi
 Use cloudbees/java-build-tools-dockerfile - version 2.1.0
 
 -   OS: Ubuntu 16.04
--   Scala: 2.12.3
 -   Sbt: 1.0.2
 -   Common tools: openssh-client, unzip, wget, curl, git, jq
 -   AWS CLI: aws-cli/1.11.163
