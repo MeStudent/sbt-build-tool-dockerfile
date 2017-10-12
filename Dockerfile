@@ -29,7 +29,7 @@ USER root
 #==========
 # SBT
 #==========
-ENV SBT_VERSION 1.0.2
+ENV SBT_VERSION 0.13.16
 RUN \
   cd /tmp/ && \
   wget "https://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb" && \
