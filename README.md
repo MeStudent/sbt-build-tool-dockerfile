@@ -8,8 +8,9 @@ image adding scala support.
 # Supported tags and respective `Dockerfile` links
 
 
--   [`latest` (*latest/Dockerfile*)](https://github.com/jupeter/java-build-tools-dockerfile/blob/master/Dockerfile)
--   [`0.0.1` (*0.0.1/Dockerfile*)](https://github.com/jupeter/java-build-tools-dockerfile/blob/0.0.1/Dockerfile)
+-   [`latest` (*latest/Dockerfile*)](https://github.com/jupeter/sbt-build-tool-dockerfile/blob/master/Dockerfile)
+-   [`1.0.0` (*1.0.0/Dockerfile*)](https://github.com/jupeter/sbt-build-tool-dockerfile/blob/1.0.0/Dockerfile)
+-   [`0.0.1` (*0.0.1/Dockerfile*)](https://github.com/jupeter/sbt-build-tool-dockerfile/blob/0.0.1/Dockerfile)
 
 # How to use this Docker image
 
