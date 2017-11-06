@@ -26,6 +26,16 @@ MAINTAINER Piotr Plenik <piotr.plenik@gmail.com>
 
 USER root
 
+
+#==========
+# Install docker
+#==========
+ENV DOCKER_VERSION 17.11.0-ce-rc2
+RUN set -ex; \
+    wget -qO- "https://get.docker.io" | sh; \
+	dockerd -v; \
+	docker -v
+	
 #==========
 # SBT
 #==========
@@ -36,7 +46,7 @@ RUN \
   dpkg -i sbt-$SBT_VERSION.deb && \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
-  apt-get install sbt 
+  apt-get install sbt
 
 #==========
 # Install dependences
