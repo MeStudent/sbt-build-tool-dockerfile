@@ -26,6 +26,18 @@ MAINTAINER Piotr Plenik <piotr.plenik@gmail.com>
 
 USER root
 
+#==============================
+# Set locale
+#==============================
+RUN set -ex; \
+    apt-get update -qqy; \
+    apt install -y locales; \
+    dpkg-reconfigure locales; \
+    locale-gen en_US.UTF-8 && locale -a
+
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
 
 #==============================
 # Install docker client
@@ -53,3 +65,4 @@ RUN \
     mkdir project && \
     echo "sbt.version=$SBT_VERSION" > project/build.properties && \
     sbt -mem 1024 sbtVersion
+
