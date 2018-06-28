@@ -1,4 +1,4 @@
-FROM cloudbees/java-build-tools:2.1.0
+FROM cloudbees/java-build-tools:2.2.0
 MAINTAINER Piotr Plenik <piotr.plenik@gmail.com>
 
 #
