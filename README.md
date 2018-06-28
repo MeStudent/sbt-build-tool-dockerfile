@@ -1,5 +1,7 @@
 # Description
 
+[pplenik/sbt-build-tool-dockerfile](https://hub.docker.com/r/pplenik/sbt-build-tool-dockerfile/)
+
 Docker image with all the commonly used tools to build Scala applications on Jenkins slaves.
 
 I decided to extend [cloudbees/java-build-tools-dockerfile](https://hub.docker.com/r/cloudbees/java-build-tools/)
@@ -8,16 +10,16 @@ image adding scala support.
 # Supported tags and respective `Dockerfile` links
 
 
--   [`latest` (*latest/Dockerfile*)](https://github.com/jupeter/java-build-tools-dockerfile/blob/master/Dockerfile)
--   [`0.0.1` (*0.0.1/Dockerfile*)](https://github.com/jupeter/java-build-tools-dockerfile/blob/0.0.1/Dockerfile)
+-   [`latest` (*latest/Dockerfile*)](https://github.com/jupeter/sbt-build-tool-dockerfile/blob/master/Dockerfile)
+-   [`2.2.0` (*0.0.1/Dockerfile*)](https://github.com/jupeter/sbt-build-tool-dockerfile/blob/1.1.0/Dockerfile)
 
 # How to use this Docker image
 
 This Docker image is intended to be used with the [Jenkins Docker Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Docker+Pipeline+Plugin).
 
-# Version LATEST
+# Version 1.1.0
 
-Use cloudbees/java-build-tools-dockerfile - version 2.1.0
+Use cloudbees/java-build-tools-dockerfile - version 2.2.0
 
 -   OS: Ubuntu 16.04
 -   Sbt: 1.0.2
